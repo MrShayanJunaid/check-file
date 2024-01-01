@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="P__1_-removebg-preview.png">
+        <style>
+            #nameSpan, #phoneSpan,#emailSpan
+            {
+                font-family: 'Poppins', sans-serif;
+            }
+        </style>
+</head>
+<body>
+    <div class="container"data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+        <div class="inner_container">
+            <div class="contact_main">
+            <div class="contact_header">
+                <div class="contact_header1">
+                </div>
+                <div class="c_header_heading">
+                    <h1>Contact</h1>
+                </div>
+            </div>
+            <div class="contact_section2">
+                <h1 class="stroke_text">Contact</h1>
+                <h2>Contact Information</h2>
+                <div class="contact_card">
+                    <div class="contact_card_inner">
+                        <div class="c_card1">
+                            <div class="c_icon_1">
+                            <i class="fa-regular fa-address-book"></i>
+                        </div>
+                            <h2 class="number">03193509083</h2>
+                            <p>Our Whatsapp</p>
+                        </div>
+                        <div class="c_card1">
+                            <div class="c_icon_2">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                            <h2 class="mail">mail@paaressperfumes.co</h2>
+                            <p>Our Email</p>
+                         </div>
+                         <div class="c_card1">
+                            <div class="c_icon_3">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            
+                            <h2>Karachi,Pakistan</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact_section3">
+                <div class="contact_section3_inner">
+                    <div class="sec3_inner1">
+                        <h1 class="stroke_text">Form</h1>
+                        <h2>Get In Touch !!</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="sec3_inner2">
+                        <form>
+                            <input type="text" required placeholder ="Email" id="email1" onkeyup="emailValidation()"><br>
+                            <span id="emailSpan"></span>
+                            <input type="text" required placeholder="Phone" id="phone1" onkeyup="phoneValidation()"><br>
+                            <span id="phoneSpan"></span>
+                            <input type="text" required placeholder="Name" id="name1" onkeyup="nameValidation()"><br>
+                            <span id="nameSpan"></span>
+                            <textarea  placeholder="Message" required class="message" id="message" onkeyup="messageValidation()"></textarea>
+                            <div class="submit_btn">
+                            <button onclick="formValidation()">Submit Button</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="map_section">
+                <div class="map_inner">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.3139925217906!2d67.14924997599725!3d24.887269144183062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339999415e0c3%3A0x36742eee0fd9c291!2sAptech%20Metro%20Star%20Gate!5e0!3m2!1sen!2s!4v1700757126259!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        // function formValidation()
+        // {
+        //     var name=document.getElementById("name1").value;
+        //     var name_s=document.getElementById('nameSpan');
+        //     var phone=document.getElementById("email1").value;
+        //     var phone_s=document.getElementById('emailSpan');
+        //     var email=document.getElementById("phone1").value;
+        //     var email_s=document.getElementById('phoneSpan');
+        //     var Pattern=/^[a-zA-Z0-9]{1}$/;
+
+        //     if(!Pattern.test(name))
+        //     {
+        //         name_s.innerHTML='Name is Required';
+        //         name_s.style.color='#FF3131'; 
+
+        //     }
+        //     else if(!Pattern.test(email))
+        //     {
+        //         name_s.innerHTML='Name is Required';
+        //         name_s.style.color='#FF3131'; 
+
+        //     }
+        //     else if(!Pattern.test(phone))
+        //     {
+        //         name_s.innerHTML='Name is Required';
+        //         name_s.style.color='#FF3131'; 
+
+        //     }
+        //     else
+        //     {
+        //         name.value='';
+        //         phone.value='';
+        //         email.value='';
+        //         alert('Form is Submit');
+        //     }
+
+        // }
+
+        function nameValidation()
+        {
+            var name=document.getElementById("name1").value;
+            var name_s=document.getElementById('nameSpan');
+            var namePattern=/^[A-Za-z\s]{0,15}$/;
+            if(namePattern.test(name))
+            {
+                
+                name_s.innerHTML='Name is Valid';
+                name_s.style.color='#2bff64';
+                name_s.style.fontFamily="Poppins', sans-serif'";
+
+            }
+            else
+            {
+                name_s.innerHTML='Name is invalid';
+                name_s.style.color='#FF3131'; 
+
+            }
+        }
+
+        function phoneValidation()
+        {
+            var phone=document.getElementById("phone1").value;
+            var phone_s=document.getElementById('phoneSpan');
+            var phonePattern=/^[0-9]{11}$/;
+            if(phonePattern.test(phone))
+            {
+                
+                phone_s.innerHTML='Phone is Valid';
+                phone_s.style.color='#2bff64';
+                phone_s.style.fontFamily="Poppins', sans-serif'";
+
+            }
+            else
+            {
+                phone_s.innerHTML='Phone is invalid';
+                phone_s.style.color='#FF3131'; 
+
+            }
+        }
+
+        function emailValidation()
+        {
+            var email=document.getElementById("email1").value;
+            var email_s=document.getElementById('emailSpan');
+            var emailPattern=/^([a-zA-Z0-9]+)@([a-zA-Z]+)\.([a-zA-Z]){2,3}$/;
+            if(emailPattern.test(email))
+            {
+                
+                email_s.innerHTML='Email is Valid';
+                email_s.style.color='#2bff64';
+                email_s.style.fontFamily="Poppins', sans-serif'";
+
+            }
+            else
+            {
+                email_s.innerHTML='Email is invalid';
+                email_s.style.color='#FF3131'; 
+
+            }
+        }
+      </script>
+</body>
+</html>
